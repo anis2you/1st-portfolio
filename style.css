@@ -1,0 +1,509 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar {
+background-color: #40868b;
+padding: 1% 7%;
+text-align: center;
+}
+.logo img{border: 1px solid;
+    width: 30%;
+    border-radius: 50%;
+}
+h1{
+ font-size: 2.5rem;
+ text-align: center;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+[class*="col-"]
+{
+float: left;
+padding: 10px;
+}
+/* for mobail */
+[class*="col-"]{
+    width: 100%;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.navbar h1{
+    color: rgb(250, 252, 250);
+    margin: 0%px;
+    padding: 10px;
+}
+.nav-manu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-manu a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+.nav-manu a:hover{
+    background-color: gray;
+}
+
+/* <!-- navbar ends here --> */
+
+/* <!-- profile start heere --> */
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+.profile .top-cloudy-icon{
+    width: 80px;
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+ 
+}
+.profile .top-cloudy-icon:hover{
+   transform: rotate(360deg);
+}
+.profile-des h1{
+font-family: sans-ser;
+
+}
+.profile-des p{
+    color: gray;
+    margin: 0px auto 20px auto;
+    text-align: center;
+    width: 90%;
+}
+.profile .bot-cloudy-icon{
+    width: 80px;
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    transition: transform 2s;
+}
+.profile .bot-cloudy-icon:hover{
+    transform: rotate(360deg);
+ }
+ .profile::after{
+     content: '';
+     display: table;
+     clear: both;
+ }
+ /* profile ends */
+
+ /* <!-- about me start here --> */
+.about-img{
+    width: 200px;
+    border-radius: 50%;
+}
+.conta{
+    color: black;
+}
+.about-me{
+    text-align: center;
+    height: 500px;
+   
+}
+.about-img{
+    margin-top: 100px;
+}
+.about-des p{
+    margin-top: 8px;
+    padding: 10px;
+}
+.cv-btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 22px;
+}
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+ /* <!-- Professional experience start --> */
+ .profession{
+     padding: 1px 0px;
+ }
+ .work-experience .card{
+     background-color: #a39e9e;
+     border-radius: 5px;
+     padding: 30px;
+     transition: 0.3s;
+     height: 730px;
+ }
+ .work-experience{
+     text-align: center;
+ }
+ .work-experience .card:hover{
+     box-shadow: 0px 4px 8px 5px ;
+ }
+.icon-img{
+     width: 90px;
+     border: 2px solid white;
+     padding: 5px;
+     border-radius: 50%;
+     
+ }
+ .work-experience .card-title{
+     background-color: rgb(150, 145, 145);
+     
+ }
+
+ /* educational experience */
+ .educational-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding: 30px;
+    transition: 0.3s;
+    height: 730px;
+}
+.educational-experience{
+    text-align: center;
+}
+.educational-experience .card:hover{
+    box-shadow: 0px 4px 8px 5px ;
+}
+.icon-img{
+    width: 90px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    
+}
+.educational-experience .card-title{
+    background-color: rgb(150, 145, 145);
+    
+}
+/* skill section */
+.skills .card{
+    background-color: #ada7a7;
+    border-radius: 5px;
+    padding: 30px;
+    transition: 0.3s;
+    height: 730px;
+}
+.card-title{
+    text-align: center;
+}
+.skills .card:hover{
+    box-shadow: 0px 4px 8px 5px ;
+}
+.card-icom .icon-img{
+    width: 90px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.skills .card-title{
+    background-color: rgb(150, 145, 145);
+    
+}
+
+.skill-conteiner{
+    padding: 1px 10px;
+}
+.skill-conteiner li{
+    list-style-type: none;
+    margin: 30px;
+    font-weight: bolder;
+    position: relative;
+    text-transform: uppercase;
+}
+.skill-conteiner li::before{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(173, 138, 138);
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 5px;
+}
+.skill-conteiner li::after{
+    width: 0px;
+    height: 10px;
+    background-color: rgb(107, 104, 104);
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 5px;
+    left: 0px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+
+}
+.skill-conteiner li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+
+.skill-conteiner li::after{
+    width: 0px;
+    height: 10px;
+    background-color: rgb(107, 104, 104);
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 5px;
+    left: 0px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+
+}
+.skill-conteiner li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        width: 80%;
+    }
+}
+
+.skill-conteiner li::after{
+    width: 0px;
+    height: 10px;
+    background-color: rgb(107, 104, 104);
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 5px;
+    left: 0px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+
+}
+.skill-conteiner li.bt::after{
+    animation-name: bt;
+}
+@keyframes bt {
+    to{
+        width: 90%;
+    }
+}
+.skill-conteiner li::after{
+    width: 0px;
+    height: 10px;
+    background-color: rgb(107, 104, 104);
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 5px;
+    left: 0px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+
+}
+.skill-conteiner li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+    to{
+        width: 70%;
+    }
+}
+.skill-conteiner li::after{
+    width: 0px;
+    height: 10px;
+    background-color: rgb(107, 104, 104);
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 5px;
+    left: 0px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+
+}
+.skill-conteiner li.jq::after{
+    animation-name: jq;
+}
+@keyframes jq {
+    to{
+        width: 90%;
+    }
+}
+.skill-conteiner li::after{
+    width: 0px;
+    height: 10px;
+    background-color: rgb(107, 104, 104);
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 5px;
+    left: 0px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+.skill-conteiner li.py::after{
+    animation-name: py;
+}
+@keyframes py {
+    to{
+        width: 60%;
+    }
+}
+.skill-conteiner li::after{
+    width: 0px;
+    height: 10px;
+    background-color: rgb(107, 104, 104);
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    border-radius: 5px;
+    left: 0px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+
+}
+.skill-conteiner li.wp::after{
+    animation-name: wp;
+}
+@keyframes wp {
+    to{
+        width: 90%;
+    }
+}
+
+/* Professional experience ends */
+.dot-hr{
+    border: dotted;
+    border-bottom: none;
+}
+
+.profession::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* achivment contact start here */
+.acivment-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+}
+.contact{
+    
+    text-align: center;
+}
+.contact input, textarea{
+width: 100%;
+padding: 10px;
+font-size: 1rem;
+text-align: center;
+border: none;
+border-radius: 5px;
+resize: none;
+margin: 5px;
+}
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    margin: 8px;
+    width: 100px;
+}
+.media-btn{
+    /* width: 500px; */
+    /* text-align: center; */
+}
+.i-btn{
+    text-align: center;
+}
+.media-btn .i-btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: green;
+}
+
+
+
+
+
+.acivment-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* achivment contact ends here */
+
+/* footer start from here */
+.main-footer{
+    background-color: gray;
+padding: 20px;
+text-align: center;
+font-size: 0.8rem;
+}
+.main-footer a{
+    display: block;
+    margin: 15px 0px;
+    font-size: 1rem;
+}
+.main-footer a:hover{
+    background-color: rgb(183, 187, 178);
+}
+
+.footer-p{
+    color: white;
+    font-size: 1rem;
+}
+
+.main-footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+
+/* footer ends from here */
